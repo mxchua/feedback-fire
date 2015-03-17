@@ -224,7 +224,8 @@
         
 </div> <!-- container -->
 <script>
-  var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics", "angulartics.google.analytics"]);
+  //var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics", "angulartics.google.analytics"]);
+  var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics"]);
   myApp.controller('userController', ['$scope', '$firebase',
     function($scope, $firebase) {
     $scope.newuser = {};

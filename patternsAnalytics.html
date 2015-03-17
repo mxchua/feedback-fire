@@ -35,9 +35,9 @@
 <body ng-controller="userController" >    
     <div class="container">
                 
-        <!--<div>-->
-        <!--    <button class="btn btn-danger" analytics-on="click" analytics-event="Download">Click me to analyze</button>-->
-        <!--</div>-->
+        <div>
+            <button class="btn btn-danger" analytics-on="click" analytics-event="Download">Click me to analyze</button>
+        </div>
         <h3> Counters and Timers and Queues </h3>
         Demonstraton of how to eempliment couters, timers, and task queues on Firebase. <br><br>
 
@@ -224,8 +224,8 @@
         
 </div> <!-- container -->
 <script>
-  //var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics", "angulartics.google.analytics"]);
-  var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics"]);
+  var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics", "angulartics.google.analytics"]);
+  //var myApp = angular.module("myApp", ["firebase","chart.js", "angulartics"]);
   myApp.controller('userController', ['$scope', '$firebase',
     function($scope, $firebase) {
     $scope.newuser = {};
